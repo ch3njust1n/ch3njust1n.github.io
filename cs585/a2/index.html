@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset="UTF-8">
+    <base href="/">
+    <title>Justin Chen - CS585</title>
+    <link rel='stylesheet' type='text/css' href='css/normalize.css'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <style>
+        html {
+            font-family: Avenir Next;
+        }
+        
+        body {
+            margin-top: 3em;
+            height: 100vh;
+            width: 100vw;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        #content {
+            min-width: 870px;
+            margin: 160px 0px 0px 145px;
+            padding: 0%;
+        }
+        
+        #content ul {
+            background-color: #A8D6FF;
+        }
+        
+        #content ul li {
+            font-size: 3em;
+            margin-right: 30px;
+            display: inline-block;
+        }
+        
+        #content ul li a {
+            color: #FFFFFF;
+        }
+        
+        #content ul li a:hover {
+            opacity: 0.5;
+        }
+        
+        #project {
+            margin-left: 42px;
+            margin-right: 10%;
+        }
+        
+        #project-title {
+            font-size: 3em;
+        }
+
+        #project-description {
+            font-size: 1em;
+        }
+        
+        .sub-header {
+            font-size: 1.5em;
+        }
+
+        .subsub-header {
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+        
+        .tg {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        
+        .tg td {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            padding: 10px 5px;
+            border-style: solid;
+            border-width: 1px;
+            overflow: hidden;
+            word-break: normal;
+        }
+        
+        .tg th {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            padding: 10px 5px;
+            border-style: solid;
+            border-width: 1px;
+            overflow: hidden;
+            word-break: normal;
+        }
+        
+        .tg .tg-oopb {
+            color: #cb0000
+        }
+        
+        .tg .tg-wvtg {
+            background-color: #34cdf9
+        }
+        
+        .tg .tg-jhgd {
+            background-color: #3166ff
+        }
+        
+        .tg .tg-rpj7 {
+            background-color: #fd6864
+        }
+        
+        .tg .tg-698h {
+            background-color: #000000
+        }
+        
+        @media screen and (max-width: 870px) {
+            body {
+                margin-top: 3em;
+                height: 100vh;
+                width: 870px;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+
+            #content {
+                width: 870px;
+                margin: 144px 0px 0px 0px;
+                padding: 0%;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</header>
+
+<body>
+    <div id="content">
+        <ul>
+            <li>
+                <a href="/chenjus">HOME</a>
+            </li>
+            <li>
+                |
+            </li>
+            <li>
+                <a href="/chenjus/about">ABOUT</a>
+            </li>
+            <li>
+                |
+            </li>
+            <li>
+                <a href="/chenjus/cs585">CS585</a>
+            </li>
+        </ul>
+        <div id="project">
+            <span id="project-title">Assignment 2</span>
+            <br>
+            <span id="project-description">CS 585 HW2</span>
+            <br>
+            <span id="project-description">Justin Chen</span>
+            <br>
+            <span id="project-description">Date: 9.20.16</span>
+            <p>
+                <span class="sub-header">Problem Definition</span>
+                <div>
+                    <span class="subsub-header">Template Matching</span>
+                    <br>
+                    <p>
+                        Given an object, track it using a template of that object. A template of the object is just an image that represents that object that can be detected in each frame. Tracking an object must be robust in various lighting conditions, depths, and orientations.
+                    </p>
+                    <span class="subsub-header">Hand Shape and Gesture Delineation</span>
+                    <br>
+                    <p>
+                        Given a video of hand gestures, detect and classify the hand gesture in the current frame. This problem requires a robust system that can handle various lighting conditions, depths, and orientations to properly identify hand gestures.
+                    </p>
+                </div>
+            </p>
+            <p>
+                <span class="sub-header">Method and Implementation</span>
+                <div>
+                    <span class="subsub-header">Template Matching</span>
+                    <br>
+                    <p>
+                        For this part of the assignment I initially implemented a naive template matching algorithm. My algorithm took my template and looped through the entire image one position at a time and compared the pixel intensities. If the value was over a defined threshold, that area of the frame was stored in a vector. After iterating through the entire frame, the algorithm searched through the vector and selected the area that best matched the template. This naive approach was incredibly slow. The frames lagged insomuch that the algorithm could not draw a bounding box on the region of interest.
+                    </p>
+                    <p>
+                        After considerable thought about how to improve the algorithm, I reapproached the problem by using the OpenCV function matchTemplate(). The OpenCV function efficiently matched objects. However, there were still problems. The function only matched if the object in the frame was about the same size of the template. This meant that it could not naturally handle change in depth, or rotation. To address this, I tried multiple templates. Each iteration, the algorithm would check each template against each area while sliding across the image. However, this, once again, slowed down the program significantly. The best I could manage was a two-level image pyramid. Using the OpenCV function pyrDown(), the program generated a template half the size of the original template. With two templates, the program was able to detect the object when it changed depth in the frame. However, once again, this was not perfect. There was a gap of a few inches between the depth at which the object could be detected. Additionally, if the object was too close to the camera, the object could not be detected and if it was too far away, the template would not match either.
+                    </p>
+                    <p>
+                        As for change in illumination, the OpenCV template matching algorithm was reasonably well-behaved if the object was a solid color and not reflective. I chose to track a bright orange business card. The business card was non-reflective and solid orange. When trying to track other objects that were very reflective or blended in with the background, the OpenCV template matching algorithm had difficulty detecting the object. I mainly tried testing under ideal lighting conditions to get an idea of how well the algorithm could perform.
+                    </p>
+                </div>
+            </p>
+            <p>
+                <span class="subsub-header">Hand Shape and Gesture Delineation</span>
+                <br>
+                <p>
+                    <p>
+                        To delineate hand shapes and gestures, the program used template matching to detect hands. This time to improve efficiency, the user was forced to place their hand in a static bounding box, which was fixed in the middle of the frame. The hand would be an expected size based on the template and user's hand would be contrained to the box. This greatly improved the runtime since it did not have to search the entire frame pixel-by-pixel with the template. The program also used black and white templates for matching. Each time, the image in the bounding box was detected with skin detection and then converted to black and white and compared with the black and white template of a hand. This took care of issues with lighting and color intensities. As for the graphic, the program has a set of predefined images that correlate with which hand shape/gesture that was detected. If classification was successful, the image of that object would light up. If nothing was classified, the box indicating no match was light up.
+                    </p>
+            </p>
+            </p>
+            <p>
+               <span class="sub-header">Experiments</span>
+                <p>
+                    Below are some frames of successfully and unsuccessfully detecting the business card and a MBTA pass:
+                    <div>
+                        <img src="/chenjus/cs585/a2/fail1.png" height="210" width="360">
+                        <img src="/chenjus/cs585/a2/yes1.png" height="210" width="360">
+                        <br>
+                        <img src="/chenjus/cs585/a2/fail2.png" height="210" width="360">
+                        <img src="/chenjus/cs585/a2/yes2.png" height="210" width="360">
+                        <br>
+                        <img src="/chenjus/cs585/a2/fail3.png" height="210" width="360">
+                        <img src="/chenjus/cs585/a2/yes3.png" height="210" width="360">
+                        <br>
+                        <img src="/chenjus/cs585/a2/temp2-fail1.png" height="210" width="360">
+                        <img src="/chenjus/cs585/a2/temp2-fail2.png" height="210" width="360">
+                        <br>
+                        <img src="/chenjus/cs585/a2/temp2-fail3.png" height="210" width="360">
+                        <img src="/chenjus/cs585/a2/temp2-yes1.png" height="210" width="360">
+                    </div>
+                </p>
+                <p>
+                    Below are some frames of successfully and unsuccessfully delineated hand shapes:
+                    <div>
+                        <img src="/chenjus/cs585/a2/hand-fail1.png" height="210" width="360">
+                        <img src="/chenjus/cs585/a2/hand-fail2.png" height="210" width="360">
+                        <br>
+                        <img src="/chenjus/cs585/a2/hand-fail3.png" height="210" width="360">
+                        <img src="/chenjus/cs585/a2/hand-fail4.png" height="210" width="360">
+                        <br>
+                        <img src="/chenjus/cs585/a2/hand-yes1.png" height="210" width="360">
+                        <img src="/chenjus/cs585/a2/hand-yes2.png" height="210" width="360">
+                        <br>
+                        <img src="/chenjus/cs585/a2/hand-yes3.png" height="210" width="360">
+                        <img src="/chenjus/cs585/a2/hand-yes4.png" height="210" width="360">
+                        <br>
+                        <img src="/chenjus/cs585/a2/hand-yes5.png" height="210" width="360">
+                        <img src="/chenjus/cs585/a2/hand-yes6.png" height="210" width="360">
+                    </div>
+                </p>
+            </p>
+            <p>
+                <span class="sub-header">Results</span>
+                <br>
+                <p>
+                    Confusion matrix:
+                </p>
+                <table class="tg">
+                    <tr>
+                        <th class="tg-031e">Results\Data</th>
+                        <th class="tg-031e">Point Left</th>
+                        <th class="tg-031e">Hi-Five</th>
+                        <th class="tg-031e">Point Right</th>
+                        <th class="tg-031e">Point Up</th>
+                        <th class="tg-031e">No Match</th>
+                        <th class="tg-031e">Point Down</th>
+                        <th class="tg-rpj7">Overall Classifications</th>
+                        <th class="tg-wvtg">Precision</th>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">Point Left</td>
+                        <td class="tg-oopb">12</td>
+                        <td class="tg-oopb">4</td>
+                        <td class="tg-oopb">1</td>
+                        <td class="tg-oopb">0</td>
+                        <td class="tg-oopb">3</td>
+                        <td class="tg-oopb">1</td>
+                        <td class="tg-rpj7">21</td>
+                        <td class="tg-wvtg">57%</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">Hi-Five</td>
+                        <td class="tg-oopb">1</td>
+                        <td class="tg-oopb">5</td>
+                        <td class="tg-oopb">0</td>
+                        <td class="tg-oopb">4</td>
+                        <td class="tg-oopb">0</td>
+                        <td class="tg-oopb">0</td>
+                        <td class="tg-rpj7">10</td>
+                        <td class="tg-wvtg">50%</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">Point Right</td>
+                        <td class="tg-oopb">0</td>
+                        <td class="tg-oopb">2</td>
+                        <td class="tg-oopb">14</td>
+                        <td class="tg-oopb">0</td>
+                        <td class="tg-oopb">3</td>
+                        <td class="tg-oopb">0</td>
+                        <td class="tg-rpj7">19</td>
+                        <td class="tg-wvtg">74%</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">Point Up</td>
+                        <td class="tg-oopb">0</td>
+                        <td class="tg-oopb">2</td>
+                        <td class="tg-oopb">1</td>
+                        <td class="tg-oopb">10</td>
+                        <td class="tg-oopb">2</td>
+                        <td class="tg-oopb">0</td>
+                        <td class="tg-rpj7">15</td>
+                        <td class="tg-wvtg">67%</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">No Match</td>
+                        <td class="tg-oopb">4</td>
+                        <td class="tg-oopb">3</td>
+                        <td class="tg-oopb">1</td>
+                        <td class="tg-oopb">4</td>
+                        <td class="tg-oopb">7</td>
+                        <td class="tg-oopb">3</td>
+                        <td class="tg-rpj7">22</td>
+                        <td class="tg-wvtg">32%</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">Point Down</td>
+                        <td class="tg-oopb">1</td>
+                        <td class="tg-oopb">2</td>
+                        <td class="tg-oopb">1</td>
+                        <td class="tg-oopb">0</td>
+                        <td class="tg-oopb">3</td>
+                        <td class="tg-oopb">14</td>
+                        <td class="tg-rpj7">21</td>
+                        <td class="tg-wvtg">67%</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-jhgd">Recall</td>
+                        <td class="tg-jhgd">67%</td>
+                        <td class="tg-jhgd">28%</td>
+                        <td class="tg-jhgd">78%</td>
+                        <td class="tg-jhgd">56%</td>
+                        <td class="tg-jhgd">39%</td>
+                        <td class="tg-jhgd">78%</td>
+                        <td class="tg-698h" colspan="2"></td>
+                    </tr>
+                </table>
+            </p>
+            <p>
+                <span class="sub-header">Discussion</span>
+                <br>
+                <p>
+                    Template matching is a simple technique for detecting and tracking objects. It was difficult to determine an appropriate pyramid size. The algorithm could not handle more than two pyramid sizes, so these had to be selected such that they cover a reasonble range to handle scale. The algorithm does not account for change in rotation given that the algorithm is too slow to do much more processing. Because object is a very distinct and uncommon color, the temple does not have much trouble picking it up at various depths, rotations, and angles. The object is also not reflective, so illumination does not affect tracking.
+                </p>
+                <p>
+                    Hand shape and gesture delineation using template matching and skin color detection was challenging given that hands can change shape. Slight motions cause misclassifications. Constraining the hand images to a box where the exact same dimensions could be compared to the templates helped with the processing.
+                </p>
+            </p>
+            <p>
+                <span class="sub-header">Conclusions</span>
+                <br>
+                <p>
+                    Template matching is a straightforward technique, however, it is too naive and not robust. Objects can change shape, depth, orientation, color, and lighting, which templates cannot properly handle. Stronger techniques are required to handle these changes, such as a convolutional neural network, which is invariant to all the aforementioned conditions. Template matching, however, is a reasonable technique when the image can be heavily constrainted a priori.
+                </p>
+            </p>
+        </div>
+    </div>
+</body>
+<footer>
+</footer>
+
+</html>

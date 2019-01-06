@@ -3,7 +3,7 @@
 <header>
     <meta charset="UTF-8">
     <base href="/">
-    <title>Justin Chen</title>
+    <title>Justin Chen - CS585</title>
     <link rel='stylesheet' type='text/css' href='css/normalize.css'>
     <link rel='stylesheet' type='text/css' href='css/style.css'>
     <style>
@@ -36,6 +36,7 @@
         }
 
         #content ul {
+            min-width: 980px;
             background-color: #A8D6FF;
         }
 
@@ -45,11 +46,11 @@
             display: inline-block;
         }
 
-        #content ul li a {
+        #content #nav li a {
             color: #FFFFFF;
         }
 
-        #content ul li a:hover {
+        #content nav li a:hover {
             opacity: 0.5;
         }
 
@@ -62,6 +63,10 @@
         #quote p{
             font-size: 14px;
             color: #ccc;
+        }
+
+        .project li a {
+            color: #000;
         }
 
         @media screen and (max-width: 980px) {
@@ -87,26 +92,50 @@
 </header>
 
 <body>
-    <img></body>
-     <div id="content">
-        <ul>
+    <div id="content">
+        <ul id="nav">
+            <li>
+                <a href="/chenjus">HOME</a>
+            </li>
+            <li>
+                |
+            </li>
             <li>
                 <a href="/chenjus/about">ABOUT</a>
             </li>
             <li>
-            |
+                |
             </li>
             <li>
                 <a href="/chenjus/projects">PROJECTS</a>
             </li>
+        </ul>
+        <ul class="project">
             <li>
-            |
-            </li>
-            <li>
-                <a href="/chenjus/blogs">BLOGS</a>
+                <a href="/chenjus/cs585/a1">Assignment 1</a>
             </li>
         </ul>
-     </div>
+        <ul class="project">
+            <li>
+                <a href="/chenjus/cs585/a2">Assignment 2</a>
+            </li>
+        </ul>
+        <ul class="project">
+            <li>
+                <a href="/chenjus/cs585/a3">Assignment 3</a>
+            </li>
+        </ul>
+        <ul class="project">
+            <li>
+                <a href="/chenjus/cs585/a4">Assignment 4</a>
+            </li>
+        </ul>
+        <ul class="project">
+            <li>
+                <a href="/chenjus/cs585/final_project">Final Project</a>
+            </li>
+        </ul>
+    </div>
 </body>
 <footer>
 </footer>

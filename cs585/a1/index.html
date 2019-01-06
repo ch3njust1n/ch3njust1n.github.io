@@ -1,0 +1,165 @@
+<!--
+        Justin Chen
+        CS585 A1
+
+        Assignment one webpage
+
+        Boston University Computer Science 
+        9.13.2016
+-->
+
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset="UTF-8">
+    <base href="/">
+    <title>Justin Chen - CS585</title>
+    <link rel='stylesheet' type='text/css' href='css/normalize.css'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <style>
+        html {
+            font-family: Avenir Next;
+        }
+        
+        body {
+            margin-top: 3em;
+            height: 100vh;
+            width: 100vw;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        #content {
+            min-width: 870px;
+            margin: 160px 0px 0px 145px;
+            padding: 0%;
+        }
+        
+        #content ul {
+            background-color: #A8D6FF;
+        }
+        
+        #content ul li {
+            font-size: 3em;
+            margin-right: 30px;
+            display: inline-block;
+        }
+        
+        #content ul li a {
+            color: #FFFFFF;
+        }
+        
+        #content ul li a:hover {
+            opacity: 0.5;
+        }
+        
+        #project {
+            margin-left: 42px;
+            margin-right: 10%;
+        }
+        
+        #project-title {
+            font-size: 3em;
+        }
+
+        .sub-header {
+            font-size: 1.5em;
+        }
+
+        @media screen and (max-width: 870px) {
+            body {
+                margin-top: 3em;
+                height: 100vh;
+                width: 870px;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+
+            #content {
+                width: 870px;
+                margin: 144px 0px 0px 0px;
+                padding: 0%;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</header>
+
+<body>
+    <div id="content">
+        <ul>
+            <li>
+                <a href="/chenjus">HOME</a>
+            </li>
+            <li>
+                |
+            </li>
+            <li>
+                <a href="/chenjus/about">ABOUT</a>
+            </li>
+            <li>
+                |
+            </li>
+            <li>
+                <a href="/chenjus/cs585">CS585</a>
+            </li>
+        </ul>
+        <div id="project">
+            <span id="project-title">Assignment 1</span>
+            <br>
+            <span id="project-description">CS 585 HW 1</span>
+            <br>
+            <span id="project-description">Justin Chen</span>
+            <br>
+            <span id="project-description">Date: 9.13.16</span>
+            <p>
+                <span class="sub-header">Problem Definition</span>
+                <br>
+                Given an image of my face, manipulate it in some simple way and then output the processed image.
+            </p>
+            <p>
+                <span class="sub-header">Method and Implementation</span>
+                <br> 
+                I used a simple thresholding algorithm that took an image of me (left) and transformed it into a binary image (right). The algorithm iterates through each pixel in the image matrix and sets the pixel to either white RGB(255, 255, 255) or black RGB(0, 0, 0). On each iteration, if the sum of the components exceeds or equals the sum of the average of the component values of all RGB values (256/2*3 = 384), then each component is set to 255. Otherwise, each component value for that pixel is set to 0.
+            </p>
+            <p>
+                <span class="sub-header">Experiments</span>
+                <br>
+                I did not do any experimentation other than thresholding the image.
+            </p>
+            <p>
+                <span class="sub-header">Results</span>
+                <br>
+                <img src="/chenjus/cs585/a1/justin.jpg" height="410" width="400">
+                <img src="/chenjus/cs585/a1/justin-binary.jpg" height="410" width="400">
+            </p>
+            <p>
+                <span class="sub-header">Discussion</span>
+                <br>
+                I could perhaps work on a way to improve the runtime of the algorithm, which currently runs in O(n^2).
+            </p>
+            <p>
+                <span class="sub-header">Conclusions</span>
+                <br>
+                Binary thresholding is good method for generating black and white images.
+            </p>
+        </div>
+    </div>
+</body>
+<footer>
+</footer>
+
+</html>

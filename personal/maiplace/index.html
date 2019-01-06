@@ -3,7 +3,7 @@
 <header>
     <meta charset="UTF-8">
     <base href="/">
-    <title>Justin Chen</title>
+    <title>Justin Chen - Personal</title>
     <link rel='stylesheet' type='text/css' href='css/normalize.css'>
     <link rel='stylesheet' type='text/css' href='css/style.css'>
     <style>
@@ -28,47 +28,45 @@
         ul {
             list-style-type: none;
         }
-
+        
         #content {
-            min-width: 980px;
+            min-width: 930px;
             margin: 160px 0px 0px 145px;
             padding: 0%;
         }
-
+        
         #content ul {
             background-color: #A8D6FF;
         }
-
+        
         #content ul li {
             font-size: 3em;
             margin-right: 30px;
             display: inline-block;
         }
-
+        
         #content ul li a {
             color: #FFFFFF;
         }
-
+        
         #content ul li a:hover {
             opacity: 0.5;
         }
-
-        #quote {
+        
+        #project {
             margin-left: 42px;
-            font-size: 2em;
-            color: #FFF;
+            margin-right: 10%;
+        }
+        
+        #project-title {
+            font-size: 3em;
         }
 
-        #quote p{
-            font-size: 14px;
-            color: #ccc;
-        }
-
-        @media screen and (max-width: 980px) {
+        @media screen and (max-width: 930px) {
             body {
                 margin-top: 3em;
                 height: 100vh;
-                width: 980px;
+                width: 930px;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
@@ -76,7 +74,7 @@
             }
 
             #content {
-                width: 980px;
+                width: 930px;
                 margin: 144px 0px 0px 0px;
                 padding: 0%;
                 overflow: hidden;
@@ -87,26 +85,34 @@
 </header>
 
 <body>
-    <img></body>
-     <div id="content">
+    <div id="content">
         <ul>
+            <li>
+                <a href="/chenjus">HOME</a>
+            </li>
+            <li>
+                |
+            </li>
             <li>
                 <a href="/chenjus/about">ABOUT</a>
             </li>
             <li>
-            |
+                |
             </li>
             <li>
-                <a href="/chenjus/projects">PROJECTS</a>
-            </li>
-            <li>
-            |
-            </li>
-            <li>
-                <a href="/chenjus/blogs">BLOGS</a>
+                <a href="/chenjus/personal">PERSONAL</a>
             </li>
         </ul>
-     </div>
+        <div id="project">
+            <span id="project-title">MAI PLACE</span>
+            <p>
+                <a href="http://www.maiplace.com" target="_blank">www.maiplace.com</a>
+            </p>
+            <p>
+                Mai Place is an online menu for the restaurant Mai Place in Canton, MA, which specializes in Chinese and Japanese cuisine. The website was designed to enhance user experience. According to the restaurant owners, typical customers use their website to look at the menu to make takeout orders after work. The preeexisting website was difficult to navigate and displayed the menu in an embeded Adobe pdf reader, which was confined to a small portion of the screen. This made accessing the menu difficult and hard to see. The website was redesigned as a responsive single page containing each item on the menu and basic information about the restaurant.
+            </p>
+        </div>
+    </div>
 </body>
 <footer>
 </footer>
