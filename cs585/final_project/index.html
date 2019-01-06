@@ -126,13 +126,13 @@
                 |
             </li>
             <li>
-                <a href="/chenjus/about">ABOUT</a>
+                <a href="/about">ABOUT</a>
             </li>
             <li>
                 |
             </li>
             <li>
-                <a href="/chenjus/cs585">CS585</a>
+                <a href="/cs585">CS585</a>
             </li>
         </ul>
         <div id="project">
@@ -171,7 +171,7 @@
                     <div>
                         After manually inspecting the collected cat and dog images, we found that there was a lot of noise. Some images contained cat figurines, cartoons, and a lot of background noise and other distracting objects. To address this, we cleaned our dataset by running it through Google's Inception network [7] and only kept images if Inception's best classification score was a cat or dog. This reduced our cat images from 45,721 images to 14,478 images, and 57,941 images of dogs to 8,979 images. Simultaneously, we converted all images from grayscale to RGB. After filtering through Inception, we resized all images to 128 x 128 pixels. We then trained DCGAN from scratch on our cat images.
                         <br>
-                        <img max-width=95% max-height=95% src="/chenjus/cs585/final_project/img/inception.png">
+                        <img max-width=95% max-height=95% src="/cs585/final_project/img/inception.png">
                     </div>
                 </div>
                 <div>
@@ -179,7 +179,7 @@
                     To test our initial transfer learning implementation, we trained a cat model for 24 epochs with 11,230 cat images from ImageNet and then transferred the first three out of four layers to train a dog model with 17,095 images from Stony Brook's Im2Text dataset. The choice in datasets for this preliminary test were arbitrary.
                     <br>
                     <div>
-                        <img max-width=95% max-height=95% src="/chenjus/cs585/final_project/img/24-epochs_cat2dog.jpg">
+                        <img max-width=95% max-height=95% src="/cs585/final_project/img/24-epochs_cat2dog.jpg">
                     </div>
                 </div>
                 <div>
@@ -187,8 +187,8 @@
                     For our second experiment, we trained the cat model for longer for 35 epochs, which took about two hours. The model seemed to learn edges, colors, and colors of cats. With limited data, the DCGAN had difficulty learning the amorphous shape of cat bodies. However, the one structure that remained consistent throughout all the images was the shape of cat faces. The model learned the shape and position of cat ears on the face and learned to differentiate background from foreground. This can be seen by the fact that the generative network generates solid areas around the cat's face. By the end of training, the model seemed to be learning the eyes, nose, and mouth of cats.
                     <br>
                     <div>
-                        <img max-width=95% max-height=95% src="/chenjus/cs585/final_project/img/35-epochs_cat2dog.jpg">
-                        <img max-width=95% max-height=95% src="/chenjus/cs585/final_project/img/35-epochs_cat2dog_features.jpg">
+                        <img max-width=95% max-height=95% src="/cs585/final_project/img/35-epochs_cat2dog.jpg">
+                        <img max-width=95% max-height=95% src="/cs585/final_project/img/35-epochs_cat2dog_features.jpg">
                     </div>
                 </div>
                 <div>
@@ -196,21 +196,21 @@
                     We then continued training the cat model for another 290 epochs, which took an additional twelve hours. Interestingly, but not surprisingly, DCGAN began repeating generated images (red circles). The repeated images diverged and lost any resemblence to cats or the learned features it had around 35 epochs. This collapse in pattern is indication of underfitting in DCGANs. Bias is generally caused by insufficient amount of data, which only covers a limited portion of the space. With limited data and excessive training, the model tries to generalize all the shapes it learns across the images instead of the intended patterns that it should capture across the training data.
                     <br>
                     <div>
-                        <img max-width=95% max-height=95% src="/chenjus/cs585/final_project/img/325-epochs_cat2dog.jpg">
+                        <img max-width=95% max-height=95% src="/cs585/final_project/img/325-epochs_cat2dog.jpg">
                     </div>
                 </div>
                 <div>
                     <h3 class="sub-header-1">3.5 Data Augmentation</h3>
                     Given the lack of data, we augmented our cat dataset by applying a sequence of twenty random transformations. The set of transformations we chose were horizontal and vertical mirroring, Gaussian blur, contrast, brightness, unsharp mask, rank filter, median filter, min filter, max, filter, and mode filter. we only augmented the cat dataset resulting in a total of 291,728 images. We then trained the model again, but killed it shortly after a few epochs after noticing poor results from the images outputted every 100 epochs.
                     <br>
-                    <img max-width=95% max-height=95% src="/chenjus/cs585/final_project/img/augmented_cats.jpg">
+                    <img max-width=95% max-height=95% src="/cs585/final_project/img/augmented_cats.jpg">
                     <br>
                     <h3 class="sub-header-1">Results from training on augmented data:</h3>
                     <br>
                     <div>
-                        <img max-width=95% max-height=95% src="/chenjus/cs585/final_project/img/bad_aug_1.jpg">
-                        <img max-width=95% max-height=95% src="/chenjus/cs585/final_project/img/bad_aug_2.jpg">
-                        <img max-width=95% max-height=95% src="/chenjus/cs585/final_project/img/bad_aug_3.jpg">
+                        <img max-width=95% max-height=95% src="/cs585/final_project/img/bad_aug_1.jpg">
+                        <img max-width=95% max-height=95% src="/cs585/final_project/img/bad_aug_2.jpg">
+                        <img max-width=95% max-height=95% src="/cs585/final_project/img/bad_aug_3.jpg">
                     </div>
                 </div>
                 <div>
@@ -218,12 +218,12 @@
                     Finally, we attempted to train DCGAN on random samples from the LSUN (Large-scale Scene Understanding) 20 objects dataset with cat and dog images. We randomly sampled 600,000 cat images and 100,000 dog images and filtered them with GoogleNet. After filtering, we were left with only 299,500 cat images. Due to lack of time and computing resources, we could not download the LSUN dog dataset, which is 145 GB. However, if we had more time, we had planned on sampling 100,000 images for transfer learning dogs. 
                     <div>
 			<h3 class="sub-header-1">Final results from cat model:</h3>
-			<img max-width=95% max-height=95% src="/chenjus/cs585/final_project/img/300k_1.jpg">
-			<img max-width=95% max-height=95% src="/chenjus/cs585/final_project/img/300k_2.jpg">
-			<img max-width=95% max-height=95% src="/chenjus/cs585/final_project/img/300k_3.jpg">
-			<img max-width=95% max-height=95% src="/chenjus/cs585/final_project/img/300k_4.jpg">
-			<img max-width=95% max-height=95% src="/chenjus/cs585/final_project/img/300k_5.jpg">
-			<img max-width=95% max-height=95% src="/chenjus/cs585/final_project/img/300k_6.jpg">
+			<img max-width=95% max-height=95% src="/cs585/final_project/img/300k_1.jpg">
+			<img max-width=95% max-height=95% src="/cs585/final_project/img/300k_2.jpg">
+			<img max-width=95% max-height=95% src="/cs585/final_project/img/300k_3.jpg">
+			<img max-width=95% max-height=95% src="/cs585/final_project/img/300k_4.jpg">
+			<img max-width=95% max-height=95% src="/cs585/final_project/img/300k_5.jpg">
+			<img max-width=95% max-height=95% src="/cs585/final_project/img/300k_6.jpg">
 		    </div>
 		</div>
             </div>
