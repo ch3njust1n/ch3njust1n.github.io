@@ -46,7 +46,6 @@ export default {
 .header {
 	display: flex;
 	justify-content: flex-start;
-	background-color: blue;
 }
 
 #home {
