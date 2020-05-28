@@ -1,0 +1,31 @@
+{
+	"grad": [
+		{"name": "MA581: Probability"},
+		{"name": "CS530: Advanced Algorithms"},
+		{"name": "CS542: Machine Learning"},
+		{"name": "CS585: Image and Video Computing"},
+		{"name": "CS591: Compressive Sensing"},
+		{"name": "CS591: Directed Study on Machine Learning for Computer Networks"},
+		{"name": "CS995 L1: Convolutional Neural Networks for Analysis of Abstract Syntax Trees"},
+		{"name": "CS512: Formal Methods"}
+	],
+	"ugrad": [
+		{"name": "MA123: Calculus I (Differential Calulus)"},
+		{"name": "MA124: Calculus II (Integral Calculus)"},
+		{"name": "MA242: Linear Algebra"},
+		{"name": "CS111: Introduction to Computer Science I (Introductory programming concepts)"},
+		{"name": "CS112: Introduction to Computer Science II (Analysis of algorithms and data structures)"},
+		{"name": "CS131: Combinatoric Structures"},
+		{"name": "CS210: Computer Systems"},
+		{"name": "CS235: Algebraic Algorithms"},
+		{"name": "CS237: Probability in Computing"},
+		{"name": "CS320: Concepts of Programming Languages"},
+		{"name": "CS330: Introduction to Analysis of Algorithms"},
+		{"name": "CS332: Elements of Theory of Computation"},
+		{"name": "CS350: Fundamentals of Computing Systems"},
+		{"name": "CS411: Software Engineering"},
+		{"name": "CS455: Computer Networks"},
+		{"name": "CS460: Introduction to Database Systems"},
+		{"name": "CS591: Introduction to Computer Security"}
+	]
+}

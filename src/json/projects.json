@@ -1,0 +1,38 @@
+[
+	{
+		"name": "Parkour Theory", 
+		"desc": "A multimodal dataset for few-shot learning consisting of relational, text, video data of parkour techniques. Data pipeline for collection, validation, and processing, and preliminary results will be made available soon.", 
+		"href": "http://parkourtheory.com/", 
+		"year": "2014-Present"
+	},
+	{
+		"name": "Pystagram", 
+		"desc": "Python module for downloading Instagram videos", 
+		"href": "https://github.com/ch3njust1n/pystagram", 
+		"year": "2020"
+	},
+	{
+		"name": "Record",
+		"desc": "A minimalistic Python 3 module for locally tracking experiment parameters.",
+		"href": "https://github.com/ch3njust1n/record",
+		"year": "2020"
+	},
+	{
+		"name": "Secure Multi-Party Learning", 
+		"desc": "We implement a distributed deep learning framework, which we call SMPL pronounced [sim-puh l] on top of PyTorch and a novel distributed gradient-based optimization, which we call Hypergraph Stochastic Gradient Descent (HGSGD).", 
+		"href": "https://github.com/ch3njust1n/smpl", 
+		"year": "2018"
+	},
+	{
+		"name": "Research Paper Summaries", 
+		"desc": "Created presentations for Boston University Machine Intelligence Community's research paper discussions. Commits are under my old Github username levelicarus.", 
+		"href": "https://github.com/bumic/summaries", 
+		"year": "2017-2018"
+	},
+	{
+		"name": "AI Educational Material", 
+		"desc": "I created the curriculum and content for Boston University Machine Intelligence Community's first semester-long Fundamentals of Deep Learning workshop.", 
+		"href": "https://github.com/bumic/deeplearningseries-2017", 
+		"year": "2017"
+	}
+]

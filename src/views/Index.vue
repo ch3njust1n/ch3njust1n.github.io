@@ -1,0 +1,118 @@
+<template>
+	<div id="main">
+		<div class="header">
+			<a id="home" href="/"><h1>{{ name }}.io</h1></a>
+			<Contact></Contact>
+		</div>
+		<About></About>
+		<MIC></MIC>
+		<Projects></Projects>
+		<Edu></Edu>
+	</div>
+</template>
+
+<script>
+import About from '@/components/about'
+import MIC from '@/components/mic'
+import Contact from '@/components/contact'
+import Projects from '@/components/projects'
+import Edu from '@/components/education'
+
+export default {
+	name: 'index',
+	components: {
+		About,
+		MIC,
+		Contact,
+		Projects,
+		Edu
+	},
+	data () {
+		return {
+			name: 'justinchen'
+		}
+	},
+	methods: {
+
+	}
+}
+</script>
+
+<style>
+#main {
+	margin: 1em 4em;
+}
+
+.header {
+	display: flex;
+	justify-content: flex-start;
+	background-color: blue;
+}
+
+#home {
+	display: inline;
+}
+
+.sect {
+	margin: 2em 0;
+}
+
+.sect h1 {
+	font-size: 1.2em;
+	margin-bottom: .5em;
+}
+
+.sect p {
+	font-size: 14px
+}
+
+.item {
+	margin: 1em 0 1.5em 0;
+}
+
+.item-header {
+	font-weight: 600;
+}
+
+.item-name {
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+
+.item-desc {
+	font-size: 14px;
+}
+
+.item-year {
+	font-size: 13px;
+}
+
+h1 {
+	/*text-transform: uppercase;*/
+	font-size: 1em;
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+</style>
