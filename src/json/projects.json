@@ -13,6 +13,13 @@
 		"year": "2020"
 	},
 	{
+		"name": "Current State-of-the-art Research & Artificial Intelligence in Anime",
+		"auth": "Justin Chen, Sonam Gosh",
+		"desc": "Anime Boston 2020 was cancelled due to COVID-19.",
+		"href": "https://www.animeboston.com/coninfo/schedule_panel/3574",
+		"year": "April 10, 2020 1:00 PM Sheraton - Gardener Room"
+	},
+	{
 		"name": "Record",
 		"desc": "A minimalistic Python 3 module for locally tracking experiment parameters.",
 		"href": "https://github.com/ch3njust1n/record",
