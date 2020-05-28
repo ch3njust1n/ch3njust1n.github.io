@@ -59,6 +59,8 @@ export default {
 
 .item {
 	margin: 1em 0 1.5em 0;
+	display: flex;
+	flex-direction: column;
 }
 
 .item-header {
@@ -70,7 +72,12 @@ export default {
 	font-size: 14px;
 }
 
+.item-venu {
+	font-size: 14px;
+}
+
 .item-auth {
+	margin-top: 5px;
 	font-size: 14px;
 }
 
