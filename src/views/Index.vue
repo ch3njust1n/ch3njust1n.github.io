@@ -1,9 +1,6 @@
 <template>
 	<div id="main">
-		<div class="header">
-			<a id="home" href="/"><h1>{{ name }}.io</h1></a>
-			<Contact></Contact>
-		</div>
+		<Contact></Contact>
 		<About></About>
 		<MIC></MIC>
 		<Projects></Projects>
@@ -41,11 +38,6 @@ export default {
 <style>
 #main {
 	margin: 1em 4em;
-}
-
-.header {
-	display: flex;
-	justify-content: flex-start;
 }
 
 #home {

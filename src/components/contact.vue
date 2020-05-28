@@ -17,6 +17,7 @@ export default {
 	data() {
 		return {
 			contact: [
+				{'text': 'justinchen.io', 'href': '/'},
 				{'text': 'linkedin', 'href': 'https://www.linkedin.com/in/justin-chen-776a63159/'},
 				{'text': 'github', 'href': 'https://github.com/ch3njust1n'},
 				{'text': 'twitter', 'href': 'https://twitter.com/ch3njus'}
@@ -32,11 +33,9 @@ export default {
 <style scoped>
 .contact {
     display: flex;
-    justify-content: center;
-
 }
 
-.item {
-    margin-left: 1em;
+.item:not(:last-child) {
+    margin-right: 1em;
 }
 </style>
