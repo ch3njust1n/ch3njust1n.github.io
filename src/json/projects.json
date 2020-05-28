@@ -1,6 +1,7 @@
 [
 	{
-		"name": "Parkour Theory", 
+		"name": "Parkour Theory",
+		"auth": "Justin Chen, Parkour Community", 
 		"desc": "A multimodal dataset for few-shot learning consisting of relational, text, video data of parkour techniques. Data pipeline for collection, validation, and processing, and preliminary results will be made available soon.", 
 		"href": "http://parkourtheory.com/", 
 		"year": "2014-Present"
@@ -25,7 +26,8 @@
 		"year": "April 19, 2019 6:30-7:30 PM Hynes Workshop room 309"
 	},
 	{
-		"name": "Secure Multi-Party Learning", 
+		"name": "Secure Multi-Party Learning",
+		"auth": "Justin Chen, Frederick Jansen, Andrei Lapets", 
 		"desc": "We implement a distributed deep learning framework, which we call SMPL pronounced [sim-puh l] on top of PyTorch and a novel distributed gradient-based optimization, which we call Hypergraph Stochastic Gradient Descent (HGSGD).", 
 		"href": "https://github.com/ch3njust1n/smpl", 
 		"year": "2018"
@@ -37,7 +39,8 @@
 		"year": "2017-2018"
 	},
 	{
-		"name": "Fundamentals of Deep Learning Workshop", 
+		"name": "Fundamentals of Deep Learning Workshop",
+		"auth": "Justin Chen, Rex Wang, Mona Jalal, Ninad Tungare, Charles Ma, Jinghu Lei, Duy Nguyen, Tyrone Hou, Chloe Kaubisch, Tammy Qiu", 
 		"desc": "I created the curriculum and content for Boston University Machine Intelligence Community's first semester-long Fundamentals of Deep Learning workshop.", 
 		"href": "https://github.com/bumic/deeplearningseries-2017", 
 		"year": "2017"
