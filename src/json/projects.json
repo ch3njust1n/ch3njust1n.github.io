@@ -17,7 +17,7 @@
 		"auth": "Justin Chen, Sonam Gosh",
 		"desc": "Anime Boston 2020 was cancelled due to COVID-19. Our panel has been guaranteed acceptance for Anime Boston 2021.",
 		"href": "https://www.animeboston.com/coninfo/schedule_panel/3574",
-		"year": "Anime Boston, April 10, 2020 1:00 PM Sheraton - Gardener Room"
+		"year": "April 10, 2020 1:00 PM, Anime Boston, Sheraton - Gardener Room"
 	},
 	{
 		"name": "Record",
@@ -30,7 +30,7 @@
 		"auth": "Justin Chen, Sonam Gosh, Rex Wang",
 		"desc": "For this panel, we updated our presentation to include advances from 2017 through 2019 and we demoed an interpolation of StyleGAN trained on Anime character faces.",
 		"href": "https://www.animeboston.com/coninfo/schedule_panel/3218",
-		"year": "Anime, Boston, April 19, 2019 6:30-7:30 PM Hynes Workshop room 309"
+		"year": "April 19, 2019 6:30-7:30 PM, Anime Boston, Hynes Workshop room 309"
 	},
 	{
 		"name": "Secure Multi-Party Learning",
@@ -57,6 +57,6 @@
 		"auth": "Justin Chen, Rex Wang",
 		"desc": "This panel will highlight the differences between artificial intelligence portrayed in anime and the state of artificial intelligence research today. The presentation will cover a brief history, the state-of-the-art, the future of artificial intelligence, and how far we are today from some of the artificial intelligence technology in anime. The panelists will dissect and discuss the plausibility of artificial intelligence technologies from specific anime such as Ghost in the Shell, Ergo Proxy, and other anime. To wrap things up, there will be a live demonstration of Beating the World's Best at Super Smash Bros. with Deep Reinforcement Learning paper and real-time Neural Style Transfer.",
 		"href": "https://www.animeboston.com/coninfo/schedule_panel/2280",
-		"year": "Anime Boston, April 1, 2017 11-12 PM Hynes Workshop room 208"
+		"year": "April 1, 2017 11-12 PM, Anime Boston, Hynes Workshop room 208"
 	}
 ]
