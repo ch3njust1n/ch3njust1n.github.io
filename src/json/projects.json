@@ -28,7 +28,7 @@
 	{
 		"name": "Secure Multi-Party Learning",
 		"auth": "Justin Chen, Frederick Jansen, Andrei Lapets", 
-		"desc": "We implement a distributed deep learning framework, which we call SMPL pronounced [sim-puh l] on top of PyTorch and a novel distributed gradient-based optimization, which we call Hypergraph Stochastic Gradient Descent (HGSGD).", 
+		"desc": "We implemented a distributed deep learning framework, which we call SMPL pronounced [sim-puh l] on top of PyTorch and a novel distributed gradient-based optimization, which we call Hypergraph Stochastic Gradient Descent (HGSGD).", 
 		"href": "https://github.com/ch3njust1n/smpl", 
 		"year": "2018"
 	},
@@ -41,7 +41,7 @@
 	{
 		"name": "Fundamentals of Deep Learning Workshop",
 		"auth": "Justin Chen, Rex Wang, Mona Jalal, Ninad Tungare, Charles Ma, Jinghu Lei, Duy Nguyen, Tyrone Hou, Chloe Kaubisch, Tammy Qiu", 
-		"desc": "I created the curriculum and content for Boston University Machine Intelligence Community's first semester-long Fundamentals of Deep Learning workshop.", 
+		"desc": "We created a semester-long workshop for Boston University Machine Intelligence Community's first Fundamentals of Deep Learning workshop.", 
 		"href": "https://github.com/bumic/deeplearningseries-2017", 
 		"year": "2017"
 	},

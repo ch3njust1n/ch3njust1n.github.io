@@ -9,6 +9,7 @@
 						<span class="item-year" v-if="p.year != null"> {{ p.year }}</span>
 					</a>
 				</span>
+				<span class="item-auth" v-if="p.auth != null">{{ p.auth }}</span>
 				<p class="item-desc">{{ p.desc }}</p>
 			</li>
 		</ul>

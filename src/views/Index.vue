@@ -70,7 +70,12 @@ export default {
 	font-size: 14px;
 }
 
+.item-auth {
+	font-size: 14px;
+}
+
 .item-desc {
+	margin-top: .5em;
 	font-size: 14px;
 }
 
