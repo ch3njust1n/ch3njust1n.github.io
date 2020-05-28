@@ -30,7 +30,7 @@
 		"auth": "Justin Chen, Sonam Gosh, Rex Wang",
 		"desc": "For this panel, we updated our presentation to include advances from 2017 through 2019 and we demoed an interpolation of StyleGAN trained on Anime character faces.",
 		"href": "https://www.animeboston.com/coninfo/schedule_panel/3218",
-		"year": "April 19, 2019 6:30-7:30 PM Hynes Workshop room 309"
+		"year": "Anime, Boston, April 19, 2019 6:30-7:30 PM Hynes Workshop room 309"
 	},
 	{
 		"name": "Secure Multi-Party Learning",
@@ -46,7 +46,7 @@
 		"year": "2017-2018"
 	},
 	{
-		"name": "Fundamentals of Deep Learning Workshop",
+		"name": "Boston University MIC Fundamentals of Deep Learning Workshop",
 		"auth": "Justin Chen, Rex Wang, Mona Jalal, Ninad Tungare, Charles Ma, Jinghu Lei, Duy Nguyen, Tyrone Hou, Chloe Kaubisch, Tammy Qiu, Brian Fakhoury", 
 		"desc": "We created a semester-long workshop for Boston University Machine Intelligence Community's first Fundamentals of Deep Learning workshop.", 
 		"href": "https://github.com/bumic/deeplearningseries-2017", 
@@ -57,6 +57,6 @@
 		"auth": "Justin Chen, Rex Wang",
 		"desc": "This panel will highlight the differences between artificial intelligence portrayed in anime and the state of artificial intelligence research today. The presentation will cover a brief history, the state-of-the-art, the future of artificial intelligence, and how far we are today from some of the artificial intelligence technology in anime. The panelists will dissect and discuss the plausibility of artificial intelligence technologies from specific anime such as Ghost in the Shell, Ergo Proxy, and other anime. To wrap things up, there will be a live demonstration of Beating the World's Best at Super Smash Bros. with Deep Reinforcement Learning paper and real-time Neural Style Transfer.",
 		"href": "https://www.animeboston.com/coninfo/schedule_panel/2280",
-		"year": "April 1, 2017 11-12 PM Hynes Workshop room 208"
+		"year": "Anime Boston, April 1, 2017 11-12 PM Hynes Workshop room 208"
 	}
 ]
