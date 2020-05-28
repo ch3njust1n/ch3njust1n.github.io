@@ -18,6 +18,13 @@
 		"year": "2020"
 	},
 	{
+		"name": "Current State-of-the-art Research & Artificial Intelligence in Anime",
+		"auth": "Justin Chen, Sonam Gosh, Rex Wang",
+		"desc": "For this panel, we updated our presentation to include advances from 2017 through 2019 and we demoed an interpolation of StyleGAN trained on Anime character faces.",
+		"href": "https://www.animeboston.com/coninfo/schedule_panel/3218",
+		"year": "April 19, 2019 6:30-7:30 PM Hynes Workshop room 309"
+	},
+	{
 		"name": "Secure Multi-Party Learning", 
 		"desc": "We implement a distributed deep learning framework, which we call SMPL pronounced [sim-puh l] on top of PyTorch and a novel distributed gradient-based optimization, which we call Hypergraph Stochastic Gradient Descent (HGSGD).", 
 		"href": "https://github.com/ch3njust1n/smpl", 
@@ -30,9 +37,16 @@
 		"year": "2017-2018"
 	},
 	{
-		"name": "AI Educational Material", 
+		"name": "Fundamentals of Deep Learning Workshop", 
 		"desc": "I created the curriculum and content for Boston University Machine Intelligence Community's first semester-long Fundamentals of Deep Learning workshop.", 
 		"href": "https://github.com/bumic/deeplearningseries-2017", 
 		"year": "2017"
+	},
+	{
+		"name": "Current State-of-the-art Research & Artificial Intelligence in Anime",
+		"auth": "Justin Chen, Rex Wang",
+		"desc": "This panel will highlight the differences between artificial intelligence portrayed in anime and the state of artificial intelligence research today. The presentation will cover a brief history, the state-of-the-art, the future of artificial intelligence, and how far we are today from some of the artificial intelligence technology in anime. The panelists will dissect and discuss the plausibility of artificial intelligence technologies from specific anime such as Ghost in the Shell, Ergo Proxy, and other anime. To wrap things up, there will be a live demonstration of Beating the World's Best at Super Smash Bros. with Deep Reinforcement Learning paper and real-time Neural Style Transfer.",
+		"href": "https://www.animeboston.com/coninfo/schedule_panel/2280",
+		"year": "April 1, 2017 11-12 PM Hynes Workshop room 208"
 	}
 ]

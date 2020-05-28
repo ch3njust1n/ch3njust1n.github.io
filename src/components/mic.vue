@@ -5,12 +5,12 @@
 			<li class="item" v-for="(i, id) in prog" :key="id">
 				<span class="item-header">
 					<a class="item-name" :href="i.link" v-if="i.link != null" target="_blank">
-						{{ i.name }}
+						{{ i.name }},
 					</a>
 					<span class="item-name" v-else>
-						{{ i.name }}
+						{{ i.name }},
 					</span>
-					<span class="item-year" v-if="i.year != null">, {{ i.year }}</span>
+					<span class="item-year" v-if="i.year != null"> {{ i.year }}</span>
 				</span>
 				<p class="item-desc">{{ i.desc }}</p>
 			</li>

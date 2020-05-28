@@ -1,12 +1,12 @@
 <template>
 	<div class="sect">
-		<h1>open-source</h1>
+		<h1>projects</h1>
 		<ul>
 			<li class="item" v-for="(p, id) in proj" :key="id">
 				<span class="item-header">
 					<a class="item-name" :href="p.href" target="_blank">
-						{{ p.name }}
-						<span class="item-year" v-if="p.year != null">, {{ p.year }}</span>
+						{{ p.name }},
+						<span class="item-year" v-if="p.year != null"> {{ p.year }}</span>
 					</a>
 				</span>
 				<p class="item-desc">{{ p.desc }}</p>
