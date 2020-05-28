@@ -53,18 +53,19 @@ export default {
 .sub-head {
     margin-bottom: 1em;
     font-size: 14px;
+    font-weight: 600;
 }
 
 ul {
-    margin-top: 5px;
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
 }
 
 .degrees {
     margin-bottom: 1em;
-}
-
-.degrees li {
-    margin-bottom: 5px;
-    font-size: 14px;
 }
 </style>
