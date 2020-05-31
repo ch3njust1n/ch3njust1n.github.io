@@ -49,7 +49,7 @@
 	},
 	{
 		"name": "Boston University MIC Fundamentals of Deep Learning Workshop",
-		"auth": "Justin Chen, Rex Wang, Mona Jalal, Ninad Tungare, Charles Ma, Jinghu Lei, Duy Nguyen, Tyrone Hou, Chloe Kaubisch, Tammy Qiu, Brian Fakhoury", 
+		"auth": "Justin Chen, Rex Wang, Mona Jalal, Ninad Tungare, Joe Sun, Charles Ma, Jinghu Lei, Duy Nguyen, Tyrone Hou, Chloe Kaubisch, Tammy Qiu, Brian Fakhoury", 
 		"desc": "We created a semester-long workshop for Boston University Machine Intelligence Community's first Fundamentals of Deep Learning workshop.", 
 		"href": "https://github.com/bumic/deeplearningseries-2017", 
 		"year": "2017"
