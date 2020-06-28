@@ -44,7 +44,7 @@
 	{
 		"name": "Secure Multi-Party Learning",
 		"auth": "Justin Chen, Frederick Jansen, Andrei Lapets", 
-		"desc": "We implemented a distributed deep learning framework, which we call SMPL pronounced [sim-puh l] on top of PyTorch and a novel distributed gradient-based optimization, which we call Hypergraph Stochastic Gradient Descent (HGSGD).", 
+		"desc": "We implemented a distributed deep learning framework, which we call SMPL pronounced [sim-puh l] on top of PyTorch and a novel distributed gradient-based optimization, which we call Hypergraph Stochastic Gradient Descent (HGSGD) for applications to federated learning.", 
 		"href": "https://github.com/ch3njust1n/smpl", 
 		"year": "2018"
 	},
