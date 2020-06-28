@@ -2,7 +2,7 @@
 	{
 		"name": "Parkour Theory",
 		"auth": "Justin Chen, Parkour Community", 
-		"desc": "A multimodal dataset for few-shot learning consisting of relational, text, video data of parkour techniques. Data pipeline for collection, validation, and processing, and preliminary results will be made available soon.", 
+		"desc": "Parkour Theory is a knowledge graph that enables users to disseminate, discover and reference parkour moves. Currently, I am working on formatting it into an academic data set consisting of relational, text and video data for multimodal, few-shot and graph representation learning. Data pipeline for collection, validation, and processing, and preliminary results will be made available soon.", 
 		"href": "http://parkourtheory.com/", 
 		"year": "2014-Present"
 	},

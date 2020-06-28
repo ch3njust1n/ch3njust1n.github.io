@@ -28,8 +28,8 @@ export default {
 		return {
 			prog: [
 				{"name": "Machine Intelligence Community, Inc.", "year": "2018-Present", "link":"https://machineintelligence.cc", "desc": "501(c)(3) nonprofit for making education on machine intelligence accessible, effective, and innovative."},
-				{"name": "Machine Intelligence Conference", "desc": "MIC is a platform for student to share their work, breaking down institutional barriers, championing diversity and connecting students to industry professionals.", "year": "2018, 2019"},
-				{"name": "Student communities", "desc": "MIC, Inc. helped start and grow several student communities at Massachusetts Institute of Technology, Boston University, Harvard College, and SRM Amaravati and Kattankulathur.", "year": "2017-2020"}
+				{"name": "Machine Intelligence Conference", "desc": "MIC is a platform for students to share their work by breaking down institutional barriers, championing diversity and connecting students to industry professionals.", "year": "2018, 2019"},
+				{"name": "Student communities", "desc": "MIC, Inc. helped start and grow several student communities at Massachusetts Institute of Technology, Boston University, Harvard College, and SRM Institute for Science and Technology at Amaravati and at Kattankulathur.", "year": "2017-2020"}
 			]
 		}
 	},
