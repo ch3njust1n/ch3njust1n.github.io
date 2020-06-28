@@ -39,7 +39,7 @@
 		"auth": "Justin Chen, Devin de Hueck",
 		"desc": "Our project aspires to galvanize a virtuous cycle for democratizing machine intelligence educational content. The knowledge graph platform is an interface for creating and connecting education content and exploring the space of concepts in machine intelligence. Existing educational content mostly occupies the introductory region of knowledge space in the form of textbooks, blogs, videos and curriculums. However, the rest of that space is sparse or disconnected in research papers and academia. Explicitly defining a map over this space would further enable intensional discovery of new concepts and accelerate contribution to the field.",
 		"href": "https://github.com/MICInc/knowledgegraph",
-		"year": "2018 - 2019",
+		"year": "2018 - 2019"
 	},
 	{
 		"name": "Secure Multi-Party Learning",
