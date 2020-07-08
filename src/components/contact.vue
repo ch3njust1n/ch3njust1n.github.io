@@ -18,7 +18,7 @@ export default {
 		return {
 			contact: [
 				{'text': 'justinchen.io', 'href': '/'},
-				{'text': 'linkedin', 'href': 'https://www.linkedin.com/in/justin-chen-776a63159/'},
+				{'text': 'linkedin', 'href': 'https://www.linkedin.com/in/chenjus/'},
 				{'text': 'github', 'href': 'https://github.com/ch3njust1n'},
 				{'text': 'medium', 'href': 'https://medium.com/@ch3njust1n'}
 			]
