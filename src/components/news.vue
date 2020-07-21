@@ -3,8 +3,7 @@
 		<h1>news</h1>
 		<ul>
 			<li class="item" v-for="(n, id) in news" :key="id">
-				<span class="item-auth">{{ n.date }}</span>
-				<p class="item-desc" v-html="n.desc"></p>
+				<p class="item-desc">{{ n.date }} - {{ n.desc }}</p>
 			</li>
 		</ul>
 	</div>
