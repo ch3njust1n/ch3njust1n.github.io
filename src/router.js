@@ -10,6 +10,6 @@ export default new Router({
 			path: '/',
 			name: '',
 			component: () => import('./views/Index.vue')
-		},
+		}
 	]
 })
