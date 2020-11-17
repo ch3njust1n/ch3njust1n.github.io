@@ -1,7 +1,7 @@
 <template>
 	<div class="sect">
 		<p>I am a software engineer, independent machine learning researcher and entrepreneur.</p>
-		<p>My mind is currently exploring graph representation learning, knowledge graphs, democratizing machine intelligence education, and parkour theory.</p>
+		<p>My mind is currently exploring graph representation learning, knowledge graphs, differential geometry, democratizing machine intelligence education, and parkour theory.</p>
 	</div>
 </template>
 
