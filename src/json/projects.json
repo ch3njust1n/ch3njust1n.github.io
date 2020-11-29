@@ -29,7 +29,7 @@
 	},
 	{
 		"name": "Record",
-		"desc": "A minimalistic Python 3 module for locally tracking experiment parameters.",
+		"desc": "A minimalistic Python 3 data structure for locally tracking experiment parameters. Record extends Python's native dictionary data structure, collects system information when created and stores a record in MongoDB. Records can be used to explicitly store hyperparameters from ConfigParser or ArgumentParser, training and validation performance, and reload them later for visualizing in your pipeline or for reproducing experiments.",
 		"href": "https://github.com/ch3njust1n/record",
 		"year": "2020"
 	},
