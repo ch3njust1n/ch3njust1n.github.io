@@ -1,6 +1,6 @@
 <template>
 	<div class="sect">
-		<h1>president, director and co-founder</h1>
+		<h1>entrepreneurship</h1>
 		<ul>
 			<li class="item" v-for="(i, id) in prog" :key="id">
 				<span class="item-header">
