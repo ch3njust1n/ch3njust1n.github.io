@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import entre from '@/json/entre.json'
 
 export default {
 	name: 'index',
@@ -23,11 +24,7 @@ export default {
 	},
 	data() {
 		return {
-			prog: [
-				{"name": "Machine Intelligence Community, Inc.", "year": "2018-2020", "desc": "Co-founded and led 501(c)(3) nonprofit for making education on machine intelligence accessible, effective, and innovative."},
-				{"name": "Machine Intelligence Conference", "desc": "Organized conference to give a platform for students to share their work by breaking down institutional barriers, championing diversity and connecting students to industry professionals.", "year": "2018, 2019"},
-				{"name": "Student communities", "desc": "Helped grow several student communities at Massachusetts Institute of Technology, Boston University, Harvard College, and SRM Institute for Science and Technology at Amaravati and at Kattankulathur.", "year": "2017-2020"}
-			]
+			prog: entre
 		}
 	},
 	methods: {
