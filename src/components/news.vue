@@ -1,5 +1,5 @@
 <template>
-	<div class="sect">
+	<div id="news" class="sect">
 		<h1>news</h1>
 		<ul>
 			<li class="item" v-for="(n, id) in news" :key="id">
