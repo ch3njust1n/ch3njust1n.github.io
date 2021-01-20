@@ -2,7 +2,6 @@
 	<div id="main">
 		<Contact></Contact>
 		<About></About>
-		<Music></Music>
 		<News></News>
 		<MIC></MIC>
 		<Projects></Projects>
@@ -12,7 +11,6 @@
 
 <script>
 import About from '@/components/about'
-import Music from '@/components/music'
 import News from '@/components/news'
 import MIC from '@/components/mic'
 import Contact from '@/components/contact'
@@ -23,7 +21,6 @@ export default {
 	name: 'index',
 	components: {
 		About,
-		Music,
 		News,
 		MIC,
 		Contact,

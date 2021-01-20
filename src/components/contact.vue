@@ -20,7 +20,9 @@ export default {
 				{'text': 'linkedin', 'href': 'https://www.linkedin.com/in/chenjus/'},
 				{'text': 'github', 'href': 'https://github.com/ch3njust1n'},
 				{'text': 'medium', 'href': 'https://medium.com/@ch3njust1n'},
-				{'text': 'twitter', 'href': 'https://twitter.com/ch3njus'}
+				{'text': 'twitter', 'href': 'https://twitter.com/ch3njus'},
+				{'text': 'soundcloud', 'href': 'https://soundcloud.com/ch3njust1n'},
+				{'text': 'spotify', 'href': 'https://open.spotify.com/user/levelicarus?fbclid=IwAR2T5qDmJoklrw63X-JE096Y5TmouIezBPDG2SP7tIufo9rsSDNzFKejy7o'},
 			]
 		}
 	},
