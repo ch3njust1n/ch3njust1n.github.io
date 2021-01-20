@@ -36,6 +36,8 @@ export default {
 .contact {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+    padding: .5em auto;
 }
 
 .item:not(:last-child) {
