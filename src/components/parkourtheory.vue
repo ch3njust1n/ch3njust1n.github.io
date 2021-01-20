@@ -1,7 +1,8 @@
 <template>
-	<div id="content" class="section">
-		<ul class="contact">
-			<li class="item" v-for="(i, id) in contact" :key="id">
+	<div class="sect">
+		<h1>parkour theory</h1>
+		<ul class="links">
+			<li class="item" v-for="(i, id) in links" :key="id">
 				<a :href="i.href" target="_blank">{{ i.text }}</a>
 			</li>
 		</ul>
@@ -9,15 +10,15 @@
 </template>
 
 <script>
-import socials from '@/json/contacts.json'
+	import socials from '@/json/parkourtheory.json'
 
 export default {
-	name: 'contact',
+	name: 'parkourtheory',
 	components: {
 	},
 	data() {
 		return {
-			contact: socials
+			links: socials
 		}
 	},
 	methods: {
