@@ -1,7 +1,7 @@
 <template>
 	<div class="sect">
 		<p>I am a dog dad, software engineer, independent machine learning researcher, entrepreneur, and traceur.</p>
-		<p>My mind is currently exploring graph representation learning, knowledge graphs, parkour theory, and data engineering.</p>
+		<p>My mind is currently exploring graph representation learning, hyperbolic deep learning, knowledge graphs, data fusion, and parkour theory.</p>
 	</div>
 </template>
 
