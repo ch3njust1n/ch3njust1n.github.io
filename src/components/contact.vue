@@ -1,5 +1,5 @@
 <template>
-	<div id="content">
+	<div id="content" class="section">
 		<ul class="contact">
 			<li class="item" v-for="(i, id) in contact" :key="id">
 				<a :href="i.href" target="_blank">{{ i.text }}</a>
