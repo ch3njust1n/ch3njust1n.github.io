@@ -35,6 +35,7 @@ export default {
 <style scoped>
 .contact {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .item:not(:last-child) {
