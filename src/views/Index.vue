@@ -3,6 +3,7 @@
 		<Contact></Contact>
 		<About></About>
 		<News></News>
+		<PATH></PATH>
 		<MIC></MIC>
 		<Projects></Projects>
 		<Edu></Edu>
@@ -12,6 +13,7 @@
 <script>
 import About from '@/components/about'
 import News from '@/components/news'
+import PATH from '@/components/path'
 import MIC from '@/components/mic'
 import Contact from '@/components/contact'
 import Projects from '@/components/projects'
@@ -22,6 +24,7 @@ export default {
 	components: {
 		About,
 		News,
+		PATH,
 		MIC,
 		Contact,
 		Projects,

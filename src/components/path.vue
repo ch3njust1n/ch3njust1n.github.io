@@ -10,10 +10,10 @@
 </template>
 
 <script>
-	import socials from '@/json/parkourtheory.json'
+	import socials from '@/json/path.json'
 
 export default {
-	name: 'parkourtheory',
+	name: 'path',
 	components: {
 	},
 	data() {
