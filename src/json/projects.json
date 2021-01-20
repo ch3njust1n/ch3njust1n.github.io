@@ -1,10 +1,17 @@
 [
 	{
-		"name": "Parkour Theory",
-		"auth": "Justin Chen, Parkour Community", 
-		"desc": "A multimodal dataset for few-shot learning consisting of relational, text, video data of parkour techniques. Data pipeline for collection, validation, and processing, and preliminary results will be made available soon.", 
-		"href": "http://parkourtheory.com/", 
-		"year": "2014-Present"
+		"name": "Papers Are All You Need",
+		"auth": "Justin Chen",
+		"desc": "A tool that scrapes conference websites for accepted papers and downloads them on Arxiv. Currently, it only supports NeurIPS. I'm looking for contributors!",
+		"href": "https://github.com/ch3njust1n/papers_are_all_you_need",
+		"year": "2020-Present"
+	},
+	{
+		"name": "Parkour Theory Data Pipeline",
+		"auth": "Justin Chen", 
+		"desc": "ETL data pipeline for the Parkour Theory data set. The system contains tasks for collecting video data, validating entities and relations, statistics, formatting type labels, and generating thumbnails and the site map for the Parkour Theory website. Preliminary results will be made available soon.",
+		"href": "https://github.com/parkourtheory-admin/datapipe", 
+		"year": "2020-Present"
 	},
 	{
 		"name": "Pystagram", 
@@ -22,7 +29,7 @@
 	},
 	{
 		"name": "Record",
-		"desc": "A minimalistic Python 3 module for locally tracking experiment parameters.",
+		"desc": "A minimalistic Python 3 data structure for locally tracking experiment parameters. Record extends Python's native dictionary data structure, collects system information when created and stores a record in MongoDB. Records can be used to explicitly store hyperparameters from ConfigParser or ArgumentParser, training and validation performance, and reload them later for visualizing in your pipeline or for reproducing experiments.",
 		"href": "https://github.com/ch3njust1n/record",
 		"year": "2020"
 	},
@@ -68,5 +75,12 @@
 		"href": "https://www.animeboston.com/coninfo/schedule_panel/2280",
 		"year": "2017",
 		"venu": "Anime Boston, Hynes Workshop room 208"
+	},
+	{
+		"name": "Parkour Theory",
+		"auth": "Justin Chen, Parkour Community", 
+		"desc": "Parkour Theory is a knowledge graph that enables users to disseminate, discover and reference parkour moves. Currently, I am formatting it into an academic data set consisting of relational, text and video data for multimodal, few-shot and graph representation learning. Version 2 of Parkour Theory will soon launch. Follow @parkourtheory on Facebook, Instagram or Twitter for the latest updates.",
+		"href": "http://parkourtheory.com/", 
+		"year": "2014-Present"
 	}
 ]
