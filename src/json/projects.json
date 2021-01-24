@@ -7,7 +7,7 @@
 	},
 	{
 		"name": "Parkour Theory Data Pipeline",
-		"desc": "ETL data pipeline for the Parkour Theory knowledge base. The system contains tasks for collecting video data, validating entities and relations, statistics, formatting type labels, and generating thumbnails and the site map for the Parkour Theory website. Preliminary results will be made available soon.",
+		"desc": "ETL data pipeline for the Parkour Theory knowledge base. The system contains tasks for collecting video data, validating entities and relations, statistics, formatting type labels, and generating thumbnails and the site map for the Parkour Theory website.",
 		"href": "https://github.com/parkourtheory-admin/datapipe", 
 		"year": "2020-Present"
 	},
