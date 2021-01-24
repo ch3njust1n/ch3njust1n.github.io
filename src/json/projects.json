@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Papers Are All You Need",
-		"desc": "A tool that scrapes conference websites for accepted papers and downloads them on Arxiv. Currently, it only supports NeurIPS. I'm looking for contributors!",
+		"desc": "A tool for scraping conference websites for accepted papers given authors, topics, and year. Currently, it only supports NeurIPS. I'm looking for contributors!",
 		"href": "https://github.com/ch3njust1n/papers_are_all_you_need",
 		"year": "2020-Present"
 	},
