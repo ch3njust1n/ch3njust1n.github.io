@@ -77,7 +77,7 @@
 	{
 		"name": "Parkour Theory",
 		"auth": "Justin Chen, Parkour Community", 
-		"desc": "Parkour Theory is a knowledge graph that enables users to disseminate, discover and reference parkour moves. Currently, I am formatting it into an academic data set consisting of relational, text and video data for graph and hyperbolic representation learning. Version 2 of Parkour Theory uses Vue.js, Django and MySQL, and is now live. Follow @parkourtheory on Facebook, Instagram or Twitter for the latest updates.",
+		"desc": "Parkour Theory is a knowledge graph that enables users to disseminate, discover and reference parkour moves. Version 2 of Parkour Theory uses Vue.js, Django and MySQL, and is now live. Follow @parkourtheory on Facebook, Instagram or Twitter for the latest updates.",
 		"href": "http://parkourtheory.com/", 
 		"year": "2014-Present",
 		"links": [{"text": "parkourtheory.com", "href": "http://parkourtheory.com/"},
